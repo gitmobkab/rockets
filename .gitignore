@@ -1,3 +1,8 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# The godot tools extension needs the godot binary in the project root.
+# This is only relevant if you are using the godot tools extension for VSCode.
+godot
+godot.exe
