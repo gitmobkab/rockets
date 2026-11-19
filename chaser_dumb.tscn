@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bm38gtrdsy6a7"]
+
+[ext_resource type="Script" uid="uid://deq8cehghqt8p" path="res://chaser_dumb.gd" id="1_qe012"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_k6pvk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
+radius = 32.449963
+
+[node name="chaser_dumb" type="CharacterBody2D" unique_id=345094009]
+motion_mode = 1
+script = ExtResource("1_qe012")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1991541056]
+self_modulate = Color(1.764804, 0, 0, 1)
+scale = Vector2(0.5703125, 0.5859375)
+texture = ExtResource("2_k6pvk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=262112783]
+scale = Vector2(1.0000002, 1)
+shape = SubResource("CircleShape2D_onrkg")

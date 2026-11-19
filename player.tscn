@@ -8,11 +8,13 @@ radius = 5.0
 height = 18.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=973859490]
+motion_mode = 1
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=530477329]
 shape = SubResource("CapsuleShape2D_ic3pp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=672184040]
+texture_filter = 1
 scale = Vector2(0.140625, 0.1796875)
 texture = ExtResource("1_4flbx")
